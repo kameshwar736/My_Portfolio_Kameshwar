@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
-      <div className='bg-[rgb(18_18_18)] flex p-8 justify-between items-center px-15'>
+      <div className='bg-[rgb(18_18_18)] flex p-8 justify-between items-center px-15 fixed w-full z-50' >
         <div >
           <p className='text-[rgb(237_36_25)] text-3xl font-sans'>Logo</p>
         </div>
@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link>Connect</Link>
         </div>
         <div>
-          <button className='bg-[rgb(237_36_25)] p-2 rounded-lg text-gray-200 w-25'>Contact</button>
+          <button className='bg-[rgb(249_109_0)] p-2 rounded-lg text-gray-200 w-25'>Contact</button>
         </div>
       </div>
     </>
