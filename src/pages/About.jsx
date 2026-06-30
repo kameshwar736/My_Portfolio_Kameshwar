@@ -15,9 +15,9 @@ import github from '../assets/gitLogo.png'
 
 const About = () => {
 
-  const img =  [html, css, js, bootstrap, tailwind, react, nodejs, express, mongodb, mysql, git, github]
+   
 
-  const slideImages = [...img,...img,...img]
+  const slideImages =[html, css, js, bootstrap, tailwind, react, nodejs, express, mongodb, mysql, git, github ]
   
   
 
@@ -27,7 +27,7 @@ const About = () => {
   return (
     <>
      
-      <div className='pl-15 pt-10 bg-[rgb(18_18_18)] text-gray-300 h-screen flex flex-col gap-5'>
+      <div className='pl-15 pt-10 bg-[rgb(18_18_18)] text-gray-300 h-screen flex flex-col gap-5' id='about'>
 
         <div className='flex px-10 pt-10 gap-10'>
 

@@ -4,3 +4,9 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+*{
+  scroll-behavior: smooth;
+   scroll-margin-top: 100px;
+ 
+}

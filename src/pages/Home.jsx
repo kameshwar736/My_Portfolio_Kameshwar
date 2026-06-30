@@ -7,7 +7,7 @@ import devlogo from '../assets/images.png'
 export const Home = () => {
     return (
         <>
-            <div className='pl-30 pt-20 bg-[rgb(18_18_18)] text-gray-300 h-screen flex'>
+            <div className='pl-30 pt-20 bg-[rgb(18_18_18)] text-gray-300 h-screen flex' id='home'>
                 <div className='flex flex-col gap-8 mt-20 '>
                     <div className='flex flex-col gap-3  '>
                         <div><p className='text-2xl text-[rgb(112_112_112)] font-bold '>Hi I am</p></div>
