@@ -8,28 +8,7 @@ const projects = [
     image: streakifyLogo,
     github: "https://github.com/kameshwar736/Streakify_Consistency_tracker.git",
     live: "https://streakify-consistency-tracker.vercel.app/"
-  },
-  {
-    title: "Streakify",
-    description: "A productivity dashboard that tracks daily tasks and builds consistency through streak tracking with automatic daily reset.",
-    image: streakifyLogo,
-    github: "https://github.com/kameshwar736/Streakify_Consistency_tracker.git",
-    live: "https://streakify-consistency-tracker.vercel.app/"
-  },
-  {
-    title: "Streakify",
-    description: "A productivity dashboard that tracks daily tasks and builds consistency through streak tracking with automatic daily reset.",
-    image: streakifyLogo,
-    github: "https://github.com/kameshwar736/Streakify_Consistency_tracker.git",
-    live: "https://streakify-consistency-tracker.vercel.app/"
-  },
-  {
-    title: "Streakify",
-    description: "A productivity dashboard that tracks daily tasks and builds consistency through streak tracking with automatic daily reset.",
-    image: streakifyLogo,
-    github: "https://github.com/kameshwar736/Streakify_Consistency_tracker.git",
-    live: "https://streakify-consistency-tracker.vercel.app/"
-  },
+  }
 ]
 
 const Projects = () => {
@@ -47,7 +26,7 @@ const Projects = () => {
       </div>
 
       {/* Grid */}
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 px-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-8 px-5'>
         {projects.map((project, idx) => (
           <div
             key={idx}
@@ -77,7 +56,7 @@ const Projects = () => {
               <div className='flex gap-4 pt-2'>
                 <a
                   href={project.github}
-                  target='_blank'
+                  target="_blank"
                   rel='noopener noreferrer'
                   className='flex-1 text-center bg-black text-gray-200 py-2.5 rounded-xl text-sm font-medium
                              border border-[rgb(50,50,50)] transition-colors duration-200

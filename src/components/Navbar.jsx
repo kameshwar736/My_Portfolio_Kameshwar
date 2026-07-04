@@ -17,7 +17,7 @@ const Navbar = () => {
          
         </div>
         <div>
-          <button className='bg-[rgb(249_109_0)] p-2 rounded-lg text-gray-200 w-25'>Contact</button>
+          <a href='#connect' className='bg-[rgb(249_109_0)] p-2 rounded-lg text-gray-200 w-25'>Contact</a>
         </div>
       </div>
     </>
