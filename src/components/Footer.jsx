@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-[#1b1b1b] text-gray-300 ">
       
       {/* Top Section */}
-      <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between gap-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10 flex flex-col md:flex-row justify-between gap-8">
         
         {/* Contact Section */}
         <div>
@@ -77,7 +77,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-700 text-center py-4 text-sm text-gray-500">
+      <div className="border-t border-gray-700 text-center py-4 px-4 text-sm text-gray-500">
         © {new Date().getFullYear()} Kameshwar T. All rights reserved.
       </div>
     </footer>

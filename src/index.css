@@ -74,8 +74,24 @@
   100% { background-position: 200% 50%; }
 }
 
-*{
+* {
+  box-sizing: border-box;
   scroll-behavior: smooth;
-   scroll-margin-top: 100px;
- 
+  scroll-margin-top: 100px;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

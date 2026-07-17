@@ -161,7 +161,7 @@ const Contact = () => {
     return (
         <motion.div
             ref={sectionRef}
-            className="min-h-screen bg-[rgb(18,18,18)] text-gray-300 py-20 sm:py-28 px-6 sm:px-8"
+            className="min-h-screen bg-[rgb(18,18,18)] text-gray-300 py-16 sm:py-28 px-4 sm:px-8"
             id="connect"
             initial="hidden"
             animate={controls}
@@ -245,7 +245,7 @@ const Contact = () => {
 
             <div className="max-w-3xl mx-auto">
                 {/* Header */}
-                <motion.div variants={itemVariants} className="mb-14 sm:mb-16">
+                <motion.div variants={itemVariants} className="mb-10 sm:mb-16">
                     <p className="text-xs uppercase tracking-[0.2em] text-[#F96D00] font-medium mb-3">
                         Get in touch
                     </p>
@@ -260,7 +260,7 @@ const Contact = () => {
                 {/* Contact info (left) + Form (right) */}
                 <motion.div
                     variants={itemVariants}
-                    className="mb-14 sm:mb-16 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14"
+                    className="mb-10 sm:mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14"
                 >
                     {/* Left — contact details */}
                     <div className="border-t border-[rgba(255,255,255,0.08)]">
@@ -274,13 +274,13 @@ const Contact = () => {
                                 <Wrapper
                                     key={info.label}
                                     {...wrapperProps}
-                                    className={`flex items-center gap-4 py-4 border-b border-[rgba(255,255,255,0.08)] ${
+                                    className={`flex items-center gap-3 sm:gap-4 py-4 border-b border-[rgba(255,255,255,0.08)] ${
                                         info.href ? 'group hover:opacity-70 transition-opacity duration-200' : ''
                                     }`}
                                 >
                                     <info.IconComponent className="w-[18px] h-[18px] text-gray-600 shrink-0" />
-                                    <span className="text-sm text-gray-500 w-32 shrink-0">{info.label}</span>
-                                    <span className="text-sm text-gray-200 truncate">{info.value}</span>
+                                    <span className="text-sm text-gray-500 w-24 sm:w-32 shrink-0">{info.label}</span>
+                                    <span className="text-sm text-gray-200 break-words">{info.value}</span>
                                 </Wrapper>
                             )
                         })}

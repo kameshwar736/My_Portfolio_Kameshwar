@@ -87,7 +87,7 @@ export const Home = () => {
     return (
             <motion.div
                 ref={containerRef}
-                className='min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 bg-[rgb(18,18,18)] text-gray-300'
+                className='min-h-screen flex items-center justify-center px-3 sm:px-6 lg:px-8 pt-24 sm:pt-0 py-6 sm:py-12 lg:py-16 bg-[rgb(18,18,18)] text-gray-300'
                 id='home'
                 initial="hidden"
                 animate={controls}
@@ -106,18 +106,18 @@ export const Home = () => {
                     }}
                 >
                     {/* Left Content */}
-                    <div className='flex flex-col gap-6 sm:gap-8 lg:gap-10 order-2 lg:order-1'>
+                    <div className='flex flex-col gap-5 sm:gap-8 lg:gap-10 order-2 lg:order-1'>
                         <motion.div 
                             className='flex flex-col gap-2 sm:gap-3'
                             variants={itemVariants}
                         >
                             <div>
-                                <p className='text-xl sm:text-2xl text-[rgb(112_112_112)] font-medium tracking-wide'>
+                                <p className='text-lg sm:text-2xl text-[rgb(112_112_112)] font-medium tracking-wide'>
                                     Hi I am
                                 </p>
                             </div>
                             <div>
-                                <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent'>
+                                <h1 className='text-3xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent'>
                                     Kameshwar
                                 </h1>
                             </div>
@@ -129,7 +129,7 @@ export const Home = () => {
                                     className='relative'
                                     variants={itemVariants}
                                 >
-                                    <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#F96D00] via-orange-400 to-[#F96D00] bg-clip-text text-transparent bg-[length:200%] animate-[shineText_4s_linear_infinite]'>
+                                    <h1 className='text-3xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#F96D00] via-orange-400 to-[#F96D00] bg-clip-text text-transparent bg-[length:200%] animate-[shineText_4s_linear_infinite]'>
                                         MERN Stack Developer
                                     </h1>
                                     <style>{`
@@ -141,7 +141,7 @@ export const Home = () => {
                                 </motion.div>
                                 
                                 <motion.div 
-                                    className='flex gap-4 sm:gap-6 flex-wrap'
+                                    className='flex gap-3 sm:gap-6 flex-wrap'
                                     variants={itemVariants}
                                 >
                                     {socialLinks.map((link, index) => (
@@ -197,7 +197,7 @@ export const Home = () => {
                                     className='relative group'
                                 >
                                     <button
-                                        className='relative overflow-hidden bg-gradient-to-r from-[#F96D00] to-orange-500 p-3 sm:p-3.5 rounded-xl text-gray-900 font-semibold w-36 sm:w-40 h-12 sm:h-13 transition-all duration-300 shadow-lg hover:shadow-[0_0_40px_rgba(249,109,0,0.4)] cursor-pointer'
+                                        className='relative overflow-hidden bg-gradient-to-r from-[#F96D00] to-orange-500 px-4 py-3 rounded-xl text-gray-900 font-semibold w-full sm:w-40 h-12 transition-all duration-300 shadow-lg hover:shadow-[0_0_40px_rgba(249,109,0,0.4)] cursor-pointer'
                                         onClick={handleClick}
                                     >
                                         <span className='relative z-10'>Hire Me</span>
@@ -215,7 +215,7 @@ export const Home = () => {
                                     }}
                                     whileTap={{ scale: 0.95 }}
                                 >
-                                    <a href={resume} download target='_blank' className='relative p-3 top-4 sm:p-3.5 rounded-xl text-gray-200 border-2 border-[#F96D00]/30 w-30 sm:w-40 h-12 sm:h-13 transition-all duration-300 hover:border-[#F96D00] hover:text-[#F96D00] hover:shadow-[0_0_30px_rgba(249,109,0,0.15)] hover:bg-[#F96D00]/5 backdrop-blur-sm cursor-pointer'>
+                                    <a href={resume} download target='_blank' className='relative px-4 py-3 rounded-xl text-gray-200 border-2 border-[#F96D00]/30 w-full sm:w-40 h-12 transition-all duration-300 hover:border-[#F96D00] hover:text-[#F96D00] hover:shadow-[0_0_30px_rgba(249,109,0,0.15)] hover:bg-[#F96D00]/5 backdrop-blur-sm cursor-pointer flex items-center justify-center'>
                                         Download CV
                                     </a>
                                 </motion.div>
@@ -224,13 +224,13 @@ export const Home = () => {
 
                         {/* Statistics Cards */}
                         <motion.div 
-                            className='flex gap-3 sm:gap-4 flex-wrap'
+                            className='flex gap-3 sm:gap-4 flex-wrap justify-start'
                             variants={itemVariants}
                         >
                             {stats.map((stat, index) => (
                                 <motion.div
                                     key={stat.label}
-                                    className={`relative group px-4 sm:px-5 py-3 sm:py-4 rounded-2xl bg-[rgba(255,255,255,0.03)] backdrop-blur-xl border border-[rgba(255,255,255,0.06)] transition-all duration-500 hover:border-[#F96D00]/50 hover:shadow-[0_0_30px_rgba(249,109,0,0.1)] hover:-translate-y-2 ${index > 0 ? 'border-l border-gray-600/30' : ''}`}
+                                    className={`relative group min-w-[110px] flex-1 sm:flex-none px-4 sm:px-5 py-3 sm:py-4 rounded-2xl bg-[rgba(255,255,255,0.03)] backdrop-blur-xl border border-[rgba(255,255,255,0.06)] transition-all duration-500 hover:border-[#F96D00]/50 hover:shadow-[0_0_30px_rgba(249,109,0,0.1)] hover:-translate-y-2 ${index > 0 ? 'border-l border-gray-600/30' : ''}`}
                                     whileHover={{ 
                                         scale: 1.05,
                                         transition: { type: 'spring', stiffness: 300 }
@@ -276,7 +276,7 @@ export const Home = () => {
                             <div className='absolute inset-0 rounded-full bg-[#F96D00]/20 blur-3xl animate-pulse' />
                             
                             {/* Glass container */}
-                            <div className='relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full bg-[rgba(255,255,255,0.03)] backdrop-blur-xl border border-[rgba(255,255,255,0.06)] shadow-[0_20px_60px_rgba(0,0,0,0.5)] p-4 sm:p-6'>
+                            <div className='relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full bg-[rgba(255,255,255,0.03)] backdrop-blur-xl border border-[rgba(255,255,255,0.06)] shadow-[0_20px_60px_rgba(0,0,0,0.5)] p-4 sm:p-6 mx-auto'>
                                 <div className='absolute inset-0 rounded-full bg-gradient-to-tr from-[#F96D00]/10 to-transparent' />
                                 <div className='absolute -inset-1 rounded-full border border-[#F96D00]/20 blur-sm animate-pulse' />
                                 <img

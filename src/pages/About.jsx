@@ -53,7 +53,7 @@ const About = () => {
   return (
       <motion.div
         ref={sectionRef}
-        className='min-h-screen bg-[rgb(18,18,18)] text-gray-300 flex flex-col gap-5 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 sm:py-8 md:py-10'
+        className='min-h-screen bg-[rgb(18,18,18)] text-gray-300 flex flex-col gap-5 px-3 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-5 sm:py-8 md:py-10'
         id='about'
         initial="hidden"
         animate={controls}
@@ -93,7 +93,7 @@ const About = () => {
                 className='mt-3 sm:mt-4'
                 variants={itemVariants}
               >
-                <p className='text-base sm:text-lg lg:text-xl text-gray-400 p-3 sm:p-4 lg:p-5 leading-relaxed'>
+                <p className='text-sm sm:text-base lg:text-lg text-gray-400 p-3 sm:p-4 lg:p-5 leading-relaxed'>
                   Hi, I’m <strong className='text-white'>Kameshwar</strong>, a Frontend Developer skilled in <strong className='text-[#F96D00]'>React, JavaScript, and Tailwind CSS</strong>. I build responsive, user-friendly web applications and have working knowledge of <strong className='text-[#F96D00]'>Node.js, Express, and Git</strong>. Currently seeking an opportunity to contribute and grow as a developer.
                 </p>
               </motion.div>
@@ -200,7 +200,7 @@ const About = () => {
           </motion.div>
           
           <motion.div 
-            className="relative overflow-hidden mx-4 sm:mx-6 md:mx-8 lg:mx-10 mt-4 sm:mt-6"
+            className="relative overflow-hidden mx-2 sm:mx-6 md:mx-8 lg:mx-10 mt-4 sm:mt-6"
             variants={itemVariants}
           >
             {/* Gradient Overlays */}
@@ -227,7 +227,7 @@ const About = () => {
                     <div className='absolute inset-0 rounded-xl bg-[#F96D00]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
                     <img
                       src={img}
-                      className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 flex-shrink-0 rounded-lg object-contain relative z-10 filter brightness-90 group-hover:brightness-110 transition-all duration-500"
+                      className="w-14 sm:w-20 md:w-24 lg:w-28 xl:w-32 flex-shrink-0 rounded-lg object-contain relative z-10 filter brightness-90 group-hover:brightness-110 transition-all duration-500"
                       alt={`Tech ${i}`}
                     />
                   </div>

@@ -54,7 +54,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className={`
-          fixed w-full z-50 px-4 sm:px-6 lg:px-15
+          fixed w-full z-50 px-3 sm:px-6 lg:px-8
           transition-all duration-500 ease-in-out
           ${isScrolled
             ? 'py-3 bg-[rgb(18_18_18)]/90 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)]'
@@ -66,13 +66,13 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <motion.a
             href="#home"
-            className='border-l-2 border-[rgb(237_36_25)] pl-4 cursor-pointer'
+            className='border-l-2 border-[rgb(237_36_25)] pl-3 sm:pl-4 cursor-pointer'
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             onClick={() => handleLinkClick('home')}
           >
             <motion.p
-              className='text-[rgb(227,143,17)] text-lg font-bold tracking-wider font-sans'
+              className='text-[rgb(227,143,17)] text-base sm:text-lg font-bold tracking-wider font-sans'
               whileHover={{ color: '#F96D00' }}
               transition={{ duration: 0.3 }}
             >
@@ -84,7 +84,7 @@ const Navbar = () => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className='hidden md:flex text-lg font-medium items-center gap-2 lg:gap-3'>
+          <div className='hidden md:flex text-base lg:text-lg font-medium items-center gap-1.5 lg:gap-3'>
             {navLinks.map((link) => (
               <motion.a
                 key={link.id}
@@ -129,7 +129,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className='md:hidden text-gray-400 hover:text-white transition-colors duration-300 p-2'
+            className='md:hidden text-gray-400 hover:text-white transition-colors duration-300 p-2 -mr-1'
             aria-label="Toggle menu"
           >
             <svg
@@ -158,10 +158,10 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0, height: 'auto' }}
             exit={{ opacity: 0, y: -20, height: 0 }}
             transition={{ duration: 0.4, ease: 'easeInOut' }}
-            className='fixed top-[72px] left-0 w-full z-40 bg-[rgb(18_18_18)]/95 backdrop-blur-xl
+            className='fixed top-[4.5rem] left-0 w-full z-40 bg-[rgb(18_18_18)]/95 backdrop-blur-xl
               border-b border-white/5 shadow-[0_10px_40px_rgba(0,0,0,0.5)] md:hidden overflow-hidden'
           >
-            <div className='flex flex-col items-stretch py-6 px-4 space-y-2'>
+            <div className='flex flex-col items-stretch py-5 px-3 sm:px-4 space-y-2'>
               {navLinks.map((link) => (
                 <motion.a
                   key={link.id}
